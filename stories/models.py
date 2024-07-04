@@ -56,3 +56,15 @@ class Story(models.Model):
     image = CloudinaryField('image', default='placeholder')
     story_location = models.CharField(max_length=50, choices=STORY_LOCATION)
     news_category = models.CharField(max_length=50, choices=NEWS_CATEGORY)
+
+
+class Comment(models.Model):
+    """
+    Model to comment on stories
+    """
+    story = models.ForeignKey(
+        Story, on_delete=models.CASCADE, related_name="comments")
+    name = models.ForeignKey(
+        User, on_delete=models.CASCADE, related_name="commenter")
+    body = models.TextField()
+    created_on = models.DateTimeField(auto_now_add=True)
