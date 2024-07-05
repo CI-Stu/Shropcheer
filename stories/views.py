@@ -6,4 +6,6 @@ from .models import Story
 
 
 class StoryList(generic.ListView):
-    model = Story
+    queryset = Story.objects.all()
+    template_name = "stories/index.html"
+    paginate_by = 6

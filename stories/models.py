@@ -65,7 +65,7 @@ class Story(models.Model):
         ordering = ["-created_on"]
 
     def __str__(self):
-        return f"{self.title} | by {self.author} | location {self.story_location} | category {self.news_category}" 
+        return f"{self.title} | by {self.author} | {self.created_on} | location {self.story_location} | category {self.news_category}" 
 
 
 class Comment(models.Model):
