@@ -25,7 +25,7 @@ def story_detail(request, slug):
     :template:`stories/story_detail.html`
     """
 
-    queryset = Story.objects.filter(status=1)
+    queryset = Story.objects
     story = get_object_or_404(queryset, slug=slug)
 
     return render(
