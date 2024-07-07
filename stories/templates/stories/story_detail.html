@@ -8,7 +8,7 @@
                 <!-- Post title goes in these h1 tags -->
                 <h1 class="story-title">{{ story.title }}</h1>
                 <!-- Post author goes before the | the post's created date goes after -->
-                <p class="story-subtitle">{{ story.author }} | {{ story.created_on }}</p>
+                <p class="story-subtitle">{{ story.author }} | {{ story.created_on }} | {{story.story_location}} | {{story.news_category}}</p>
             </div>
             <div class="d-none d-md-block col-md-6 masthead-image">
                 <img src="{% static 'images/Ironbridge.jpg' %}" class="scale" alt="placeholder">
