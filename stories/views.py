@@ -25,11 +25,17 @@ def story_detail(request, slug):
     :template:`stories/story_detail.html`
     """
 
-    queryset = Story.objects
+    queryset = Story.objects.all()
     story = get_object_or_404(queryset, slug=slug)
+    comments = story.comments.all().order_by("created_on")
+    comment_count = story.comments.count()
 
     return render(
         request,
         "stories/story_detail.html",
-        {"story": story},
+        {
+            "story": story,
+            "comments": comments,
+            "comment_count": comment_count,
+        },
     )
