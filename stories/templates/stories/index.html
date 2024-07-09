@@ -18,7 +18,7 @@
                                 <img class="card-img-top" src="{% static 'images/Ironbridge.jpg' %}"
                                     alt="placeholder image">
                                 {% else %}
-                                <img class="card-img-top" src=" {{ story.image.url }}" alt="{{ story.title }}">
+                                <img class="card-img-top" src="{{ story.image.url }}" alt="{{ story.title }}">
                                 {% endif %}
                                 <div class="image-flash">
                                     <p class="author">Author: {{ story.author }}</p>
