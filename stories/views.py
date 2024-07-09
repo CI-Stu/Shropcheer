@@ -1,8 +1,11 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
+from django.views.generic import CreateView
 from django.contrib import messages
+from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Story
-from .forms import CommentForm
+from .forms import CommentForm, StoryForm
+
 
 # Create your views here.
 
@@ -39,7 +42,10 @@ def story_detail(request, slug):
             comment.name = request.user
             comment.story = story
             comment.save()
-            
+            messages.add_message(
+                request, messages.SUCCESS,
+                'Comment posted - thank you for sharing'
+    )
 
 
     comment_form = CommentForm()
@@ -54,3 +60,16 @@ def story_detail(request, slug):
             "comment_form": comment_form,
         },
     )
+
+class AddStory(LoginRequiredMixin, CreateView):
+    """Add a story"""
+    template_name = 'stories/add_story.html'
+    model = Story
+    form_class = StoryForm
+    success_url= '/'
+        
+    def form_valid(self, form):
+        form.instance.user = self.request.user
+        messages.success(self.request, 'Story added successfully')
+        return super().form_valid(form)
+

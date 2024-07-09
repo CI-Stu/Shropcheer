@@ -4,6 +4,8 @@
 {% url 'account_login' as login_url %}
 {% url 'account_signup' as signup_url %}
 {% url 'account_logout' as logout_url %}
+{% url 'add_story' as add_story_url %}
+
 
 <!DOCTYPE html>
 <html class="h-100" lang="en">
@@ -60,7 +62,7 @@
                             href="{% url 'account_logout' %}">Logout</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="">Add a story</a>
+                        <a class="nav-link" aria-current="page" href="{% url 'add_story' %}">Add a story</a>
                     </li>
                     {% else %}
                     <li class="nav-item">
@@ -76,7 +78,21 @@
             </div>
         </div>
     </nav>
-    
+    <!-- Showing Django messages -->
+<div class="container">
+    <div class="row">
+      <div class="col-md-8 offset-md-2">
+        {% for message in messages %}
+        <div class="alert {{ message.tags }} alert-dismissible
+          fade show" id="msg" role="alert">
+          {{ message | safe }}
+          <button type="button" class="btn-close"
+            data-bs-dismiss="alert" aria-label="Close"></button>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
 
     <main class="flex-shrink-0 main-bg">
         {% if user.is_authenticated %}
