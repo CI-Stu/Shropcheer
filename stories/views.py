@@ -29,7 +29,6 @@ def story_detail(request, slug):
 
     :template:`stories/story_detail.html`
     """
-
     queryset = Story.objects.all()
     story = get_object_or_404(queryset, slug=slug)
     comments = story.comments.all().order_by("created_on")
@@ -46,7 +45,7 @@ def story_detail(request, slug):
                 request, messages.SUCCESS,
                 'Comment posted - thank you for sharing'
     )
-
+            
 
     comment_form = CommentForm()
 
@@ -71,5 +70,5 @@ class AddStory(LoginRequiredMixin, CreateView):
     def form_valid(self, form):
         form.instance.user = self.request.user
         messages.success(self.request, 'Story added successfully')
-        return super().form_valid(form)
+        return super(AddStory, self).form_valid(form)
 
