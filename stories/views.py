@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
 from django.views.generic import CreateView
+from django.utils.text import slugify
 from django.contrib import messages
 from django.contrib.auth.mixins import LoginRequiredMixin
 from .models import Story
@@ -68,7 +69,7 @@ class AddStory(LoginRequiredMixin, CreateView):
     success_url= '/'
         
     def form_valid(self, form):
-        form.instance.user = self.request.user
+        form.instance.author = self.request.user
         messages.success(self.request, 'Story added successfully')
         return super(AddStory, self).form_valid(form)
 

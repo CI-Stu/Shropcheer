@@ -1,4 +1,5 @@
 from django.db import models
+from django.utils.text import slugify
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
 
@@ -56,6 +57,10 @@ class Story(models.Model):
     image = CloudinaryField('image', default='placeholder')
     story_location = models.CharField(max_length=50, choices=STORY_LOCATION)
     news_category = models.CharField(max_length=50, choices=NEWS_CATEGORY)
+
+    def save(self, *args, **kwargs):
+        self.slug = slugify(self.title)
+        super().save(*args, **kwargs)
 
 
     class Meta:
