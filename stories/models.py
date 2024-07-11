@@ -2,6 +2,8 @@ from django.db import models
 from django.utils.text import slugify
 from django.contrib.auth.models import User
 from cloudinary.models import CloudinaryField
+from ckeditor.fields import RichTextField
+
 
 # Choice Fields
 STORY_LOCATION = (
@@ -52,7 +54,7 @@ class Story(models.Model):
     author = models.ForeignKey(
     User, on_delete=models.CASCADE, related_name="stories_story"
     )
-    body = models.TextField()
+    body = RichTextField(blank=True, null=True)
     created_on = models.DateTimeField(auto_now_add=True)
     image = CloudinaryField('image', default='placeholder')
     story_location = models.CharField(max_length=50, choices=STORY_LOCATION)
