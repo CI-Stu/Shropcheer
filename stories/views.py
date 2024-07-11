@@ -1,9 +1,10 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic
-from django.views.generic import CreateView
+from django.views.generic import CreateView, UpdateView, DeleteView
 from django.utils.text import slugify
 from django.contrib import messages
-from django.contrib.auth.mixins import LoginRequiredMixin
+from django.http import HttpResponseRedirect
+from django.contrib.auth.mixins import LoginRequiredMixin, UserPassesTestMixin
 from .models import Story
 from .forms import CommentForm, StoryForm
 
@@ -72,4 +73,26 @@ class AddStory(LoginRequiredMixin, CreateView):
         form.instance.author = self.request.user
         messages.success(self.request, 'Story added successfully')
         return super(AddStory, self).form_valid(form)
+
+
+class EditStory(UpdateView):
+    """ Edit Story """
+    model = Story
+    template_name = 'stories/edit_story.html'
+    form_class = StoryForm
+    success_url= '/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().user
+
+
+class DeleteStory(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
+    """ Delete Story """
+    model = Story
+    success_url = '/'
+
+    def test_func(self):
+        return self.request.user == self.get_object().author
+
+
 

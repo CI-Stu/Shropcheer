@@ -3,6 +3,13 @@
 {% load crispy_forms_tags %}
 
 {% block content %}
+
+{% if request.user == story.author %}
+<div class="text-center">
+    <a href="{% url 'edit_story' story.id %}" class="btn btn-secondary btn-edit">Edit</a>
+    <a href="{% url 'delete_story' story.id %}" class="btn btn-secondary btn-edit">Delete</a>
+</div>
+{% endif %}
 <div class="masthead">
     <div class="container">
         <div class="row g-0">
@@ -36,6 +43,8 @@
             </div>
         </div>
     </div>
+
+
     <!-- Comments count-->
     <div class="row">
         <div class="col-12">
