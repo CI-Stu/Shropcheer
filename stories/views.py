@@ -85,6 +85,11 @@ class EditStory(UpdateView):
     def test_func(self):
         return self.request.user == self.get_object().user
 
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        messages.success(self.request, 'Story edited successfully')
+        return response
+
 class DeleteStory(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """ Delete Story """
     model = Story
@@ -92,6 +97,12 @@ class DeleteStory(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user == self.get_object().author
+
+    def form_valid(self, form):
+        response = super().form_valid(form)
+        messages.success(self.request, 'Story deleted successfully')
+        return response
+
 
     
 
