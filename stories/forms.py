@@ -1,3 +1,4 @@
+from django_summernote.widgets import SummernoteWidget
 from django import forms
 from .models import Comment, Story
 
@@ -10,6 +11,7 @@ class CommentForm(forms.ModelForm):
 
 
 class StoryForm(forms.ModelForm):
+    body = forms.CharField(widget=SummernoteWidget())
     class Meta:
         model = Story
         fields = [

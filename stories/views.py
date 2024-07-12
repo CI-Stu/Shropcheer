@@ -85,7 +85,6 @@ class EditStory(UpdateView):
     def test_func(self):
         return self.request.user == self.get_object().user
 
-
 class DeleteStory(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
     """ Delete Story """
     model = Story
@@ -93,6 +92,8 @@ class DeleteStory(LoginRequiredMixin, UserPassesTestMixin, DeleteView):
 
     def test_func(self):
         return self.request.user == self.get_object().author
+
+    
 
 
 
