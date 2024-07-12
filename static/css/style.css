@@ -3,26 +3,38 @@ body {
     font-family: Didact Gothic;
 }
 
+/* Nav */
+
 .shropnav {
     background-color: #ffdc00;
-    height: 75px;
-
 }
 
-.tagline {
-    font-family: Annie Use Your Telescope;
-}
-
-.brand {
-    font-family: Londrina Solid;
-    font-size: 4rem;
-    font-weight: 700;
+.navname {
     color: #3a0fe7;
+    font-family: Londrina Solid;
+    font-size: 3rem;
+    font-weight: 600;
 }
 
 #navbarText {
-    padding-left: 300px;
+    padding-left: 200px;
+    color: #3a0fe7;
+    
 
+}
+
+/* Home Page */
+
+.opening-message h2 {
+    font-family: Londrina Solid;
+    font-weight: 100;
+    text-transform: uppercase;
+    
+}
+
+.opening-message h5 {
+    font-weight: lighter;
+    
 }
 
 .thin {
