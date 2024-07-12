@@ -125,18 +125,18 @@ body {
 
 .btn-signup,
 .btn-edit {
-    background-color: #188181;
+    background-color: #3a0fe7;
     color: #fff;
 }
 
 .btn-signup:hover,
 .btn-signup:active {
     background-color: #fff;
-    color: #23BBBB;
+    color: #3a0fe7;
 }
 
 .link {
-    color: #23BBBB;
+    color: #3a0fe7;
     text-decoration: none;
 }
 
@@ -149,9 +149,14 @@ body {
 
 .btn-delete {
     color: #fff;
-    background: #E84610;
+    background: #3a0fe7;
 }
 
 .faded {
     color: rgb(172, 175, 175);
+}
+
+.alert {
+    border-color:#3a0fe7;
+    color: #3a0fe7;
 }
