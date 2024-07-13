@@ -1,4 +1,4 @@
-# Shropcheer:
+<h1 align="center">Shropcheer</h1>>
 
 
 <img src="assets/images/amiresponsive.png">
