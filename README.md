@@ -1,4 +1,4 @@
-<h1 align="center">Shropcheer</h1>>
+<h1 align="center">Shropcheer</h1>
 
 
 <img src="assets/images/amiresponsive.png">
@@ -186,7 +186,7 @@ It allows users to stay connected with Shropcheer on social media platforms, kee
 * Implement 'likes' on posts
 * Allow users to sort or order posts by different options such as number of likes, or alphabitical location 
 
-Database Design:
+# Database Design:
 
 <img src="assets/images/Shropcheer Schema (2).png">
 
@@ -197,35 +197,26 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 ## Data Models:
 
 
-| Book   |            |   |
+| Story   |            |   |
 |----------|:-------------:|------:|
-| Title |  CharField |  |
-| Author |  CharField   |   FK |
-| ISBN | CharField |     |
-| User |  CharField | FK |
-| Genre |  CharField   |   FK |
-| Language | CharField |  FK   |
-| Summary |  TextField |  |
+| Headline |  CharField |  |
+| Author |  ForiegnKey   |   FK |
+| Slug | SlugField |     |
+| Body |  TextField | |
+| Image |  CloudinaryField   |   |
+| Created_on | DateTimeField |     |
+| Location |  CharField |  |
+| Category |  CharField |  |
 
 
 
-| Genre   |            |   |
+| Comments  |            |   |
 |----------|:-------------:|------:|
-| Category |  CharField | FK |
+| Story |  ForeignKey | FK |
+| Name |  ForeignKey | FK |
+| Created_on |  DateTimeField |  |
+| Body |  TextField |  |
 
-
-| Language   |            |   |
-|----------|:-------------:|------:|
-| Language |  CharField | FK  |
-
-| Author  |            |   |
-|----------|:-------------:|------:|
-| Name |  CharField | FK  |
-
-## User Flow Chart:
-![The Book Booth Flowchart](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7727f007-8e2e-45fc-b955-57e2d50d1e98)
-
-The Flowchart served as an efficient way to make important decisions when creating the app. It helped me narrow down which decisions were important for the users and admin as well as establishing the appropriate authentication. It also helped me decide which features were the most important i.e adding a book and viewing a list of books that are available to borrow at The Book Booth Library.
 
 # Validation
 ## HTML
@@ -342,14 +333,14 @@ I've tested my deployed project using the Lighthouse Audit tool to check for any
 
 Home
 
-![homeaudit](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/5fa9bac2-d4bf-47fe-bb4a-50b3b0c4938b)
+<img src="assets/images/Lighthouse2.png">
 
-Books 
+Story details (logged in) 
 
-![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d6401b01-e4d5-4ed1-b8e9-ff6d5eeb4bd9)
+<img src="assets/images/Lighthouse4.png">
 
-Add a book 
-![audit add book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e429ee62-ecbe-4b2f-8521-28da15773a46)
+Add a story 
+<img src="assets/images/Lighthouse5.png">
 
 On a mobile device:
 
@@ -367,10 +358,14 @@ Add a book
 
 | Link | Expected Outcome | Grade |
 | ------- | ---------------- | ----- |
-| Logo | Navigates to the home page when clicked | Fail |
+| Logo / Brand | Navigates to the home page when clicked | Pass |
 | Home | Navigates to the home page when clicked | Pass |
-| Books | Navigates to a book list  page when clicked | Pass |
-| Add a Book | Navigates to a form to add a book when clicked | Pass |
+| Next Page | Navigates to next page of stories when clicked | Pass |
+| Previous Page | Navigates to previous page of stories when clicked | Pass |
+| Add a Story | Navigates to a form to add a story when clicked | Pass |
+| Edit a Story | Navigates to a edit story form when clicked | Pass |
+| Delete a Story | Navigates to a confirmation page when clicked | Pass |
+| Post a Comment | Adds a comment to a story when clicked | Pass |
 | Register | Navigates to a registration form when clicked | Pass |
 | Log in | Navigates to a screen where users can log in when clicked | Pass |
 | Logout | Navigates to a page confirming for the user to log out | Pass |
@@ -405,12 +400,14 @@ The technologies implemented in this application included HTML5, CSS, Bootstrap,
 * GitHub Pages used for hosting the deployed front-end site.
 * Gitpod used as a cloud-based IDE for development.
 * Bootstrap used as the front-end CSS framework for modern responsiveness and pre-built components.
-* ElephantSQL used as the Postgres database.
+* PostgreSQL from Code Institute was used as the database.
 * Heroku used for hosting the deployed back-end site.
 * Cloudinary used for online static file storage.
-* Canva Utilized for collaborative design and prototyping(wireframes).
-
-* Google and Stack Overflow utilized for general research or solving a bug, information gathering, and various online tools.
+* Lucidchart used for database design
+* Balsamiq used for wireframes
+* FontJoy was used for font pairing
+* Djecrety was used to generate a secure django secret key
+* Google, Stack Overflow, Phind Youtube and Slack was utilized for general research or solving a bug and information gathering.
 
 
 # Languages Used:
@@ -424,21 +421,34 @@ I used the steps used when deploying our django blog to deploy this application.
 
 # Bugs
 
-All the bugs that occured during the creation of this application have been resolved. There is a section of the application which allows you to reset your password that needs to be implemented, however they were not within the scope of this particular project and will be addressed in the near future along with the other future features.
+All the bugs that occured during the creation of this application have been resolved.
 
 
 # Credit: 
 
-* Although I used the django blog resources provided on the LMS, I also received alot of additional clarification by following along with django projects on YouTube. One of the vidoes I found especially helpful was : https://youtu.be/JzDBCZTgVyw?si=w3BBwJswUjBTm1xw
+* Although I used the django blog resources provided on the LMS, I also received alot of additional clarification by following along with django projects on YouTube.
 
-* Stack Overflow was used to solve any smaller bugs and further clarification on errors I was receiving in the terminal.
+* Youtube vidoes I found especially helpful were:
 
-* I used this site to generate a persona and created user stories: https://founderpal.ai/user-persona-generator
+ - https://www.youtube.com/watch?v=vXMTp_1_L7Y&t=280s
+ - https://www.youtube.com/watch?v=nFa3lC105dM
+ - https://www.youtube.com/watch?v=5JWElyGs8iA&t=463s
 
-* A special thanks to all the other indivudals in our cohort for their continuous support throughout the course.
 
-* The added book covers and details were taken from the Waterstones Website.
+* Stack Overflow was used to solve any smaller bugs and further clarification on errors.
+
+* Phind was used to help breakdown some key concepts and understand error messages. 
+
+* Stories and photos were taken from the Shropshire Star website.
 
 * Font Awesome was used for icons and the fonts used were derived from Google Fonts.
 
-* Wireframes, logo and flowcharts were created using Canva. 
+* Wireframes, were created using Balsamiq.
+
+* ERD diagrams for database design were created with Lucidchart.
+
+* The Book Booth by hiboibrahim was used as a framework for the readme.
+
+* A special thanks to all the other indivudals in our WMCA cohort for their support throughout the course.
+
+* Finally a big thank you to course facilitator Iris for her excellent support and guidance.
