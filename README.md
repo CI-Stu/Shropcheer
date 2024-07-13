@@ -44,16 +44,16 @@ https://shropcheer-2a6907e40b3b.herokuapp.com/
 
 ## Wireframe & Initial Design:
 ### Home Page
-<img src="/workspace/Shropcheer/assets/wireframes/shropcheerhomeNLI.png">
+<img src="assets/wireframes/shropcheerhomeNLI.png">
 
 ### Home Page Logged in navbar change - User can now add a story and logout
-<img src="/workspace/Shropcheer/assets/wireframes/shropcheerhomeloggedin.png">
+<img src="assets/wireframes/shropcheerhomeloggedin.png">
 
 ### Story Detail Page
-<img src="/workspace/Shropcheer/assets/wireframes/shropcheerstorydetials.png">
+<img src="assets/wireframes/shropcheerstorydetials.png">
 
 ### Add a Story
-<img src="/workspace/Shropcheer/assets/wireframes/shropcheeraddstory.png">
+<img src="assets/wireframes/shropcheeraddstory.png">
 
 
 
@@ -64,7 +64,7 @@ the project needed to be worked on next. Defining acceptance criteria within eac
 all neccesary features and funtionality were implemeted. This method also helped to ensure that all features were crucial
 to the core aims of the project, and time was not wasted on tasks that did not work towards these objectives. 
 
-<img src="/workspace/Shropcheer/assets/images/userstories.png">
+<img src="assets/images/userstories.png">
 
 
 # Design Choices:
@@ -73,11 +73,11 @@ to the core aims of the project, and time was not wasted on tasks that did not w
 
 Colour themes of blue and yellow were selected as these are the county colours that appear on the county flag of Shropshire. These colours will appear more as accents however, as there will be a minimalist design to not detract from the stories themselves. Main site background will be white to give some balance to the brightness of the blue and yellow. The yellow gives a positive, sunny and upbeat impression, matching the positive aims of the project. 
 
-<img src="/workspace/Shropcheer/assets/images/shropshire.png" width="400" height="50%">
+<img src="assets/images/shropshire.png" width="400" height="50%">
 
 The colours are also reminiscent of the ‘BELIEVE’ sign in Ted Lasso, which is about a coach inspiring and bonding a team through a positive attitude. 
 
-<img src="/workspace/Shropcheer/assets/images/Believe.jpg" width="400" height="50%">
+<img src="assets/images/Believe.jpg" width="400" height="50%">
 
 
 
@@ -99,7 +99,7 @@ still maintaining a modern and fun look.
 
 This font pairing was recommened on https://fontjoy.com/
 
-<img src="/workspace/Shropcheer/assets/images/ShropcheerFonts.png">
+<img src="assets/images/ShropcheerFonts.png">
 
 
 
