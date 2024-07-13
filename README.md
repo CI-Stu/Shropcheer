@@ -167,15 +167,15 @@ and they are instructed to sign in to leave a comment. Users who are logged in c
 
 #### Add a Story:
 
+As mentioned in the navbar section, once the user is logged in an option appears to 'add a story'. The add story form allows users to enter  headline, body of text, upload an image, as well as select a location and news category. The location and category sections are drop down menu's, giving the user a list of available choices. The body section features a text editor loaded through the Summernote widget for customisation and formatting of text. 
 
-<img src="">
 
-The form allows users to easily add a book to the library which will then be visible on the  books page for the users to browse. Users are also able to edit and delete a book they themselves have added giving them full control over their own contributions.
+<img src="assets/images/shropstorycust.png">
+<img src="assets/images/addstory2.png">
+<img src="assets/images/Location.png">
 
 
 #### Footer:
-
-![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fde543e6-0ee2-4c17-b8a8-436d4e824f4d)
 
 Links in the footer redirect to respective social media pages. 
 It allows users to stay connected with Shropcheer on social media platforms, keeping them informed about any new stories.
@@ -183,18 +183,12 @@ It allows users to stay connected with Shropcheer on social media platforms, kee
 
 # Future Features:
 
-* Implement a review system so readers can share their thoughts about books that they have completed. This will give others a better idea of whether the book is a good fit for them. 
-* Display if a book is available with a status (Available, Not Available).
-*  Allow users to reserve a book beforehand.
-* A search engine where users can search for books by title, author and genre.
-* Provide locations of nearest libraries.
-* Provide a way for the users to engage and form a secure community.
-* Include an about page to inform others of how The Book Booth Library works and how to use it.
-
+* Implement 'likes' on posts
+* Allow users to sort or order posts by different options such as number of likes, or alphabitical location 
 
 Database Design:
 
-![ERD](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6db92c85-0b4c-485c-b60d-709df3fb963e)
+<img src="assets/images/Shropcheer Schema (2).png">
 
 
 Entity Relationship Diagrams (ERD) help the developer to make connections between databases and information. Creating an ERD helped me understand how the tables relate to one another. I used LucidChart to create the diagram and the arrow represent how the data fields relate to one another.
