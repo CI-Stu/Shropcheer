@@ -1,7 +1,7 @@
 # Shropcheer:
 
 
-<img src="assets/images/amiresponsive.png" width="600" height="100%">
+<img src="assets/images/amiresponsive.png">
 
 
 Shropcheer is a positive news blog for local communities within Shropshire and has been created as a full-stack framework project, built using Django, Python, HTML and CSS. 
