@@ -109,51 +109,76 @@ This font pairing was recommened on https://fontjoy.com/
 
 ### Home Page:
 
-#### Navbar & Hero Image:
-![home](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f033ade-4485-40c2-ac2d-5fc5641b5cb7)
+#### Navbar:
 
-The landing page provides an introduction to the website with a call to action button encouraging new users to sign up. Signing up and logging in allows them access to view the available books and to add a book to the collection.
-The navigation bar is valuable for users as it provides quick and easy access to important sections of the website. The navigation bar includes links to Home, Books, Add a Book, Register/Logout and Sign In. Displaying a hero image using graphics are both aesthetic and a nod to the repurposed phone booths that have been transformed into local libraries around the world.
+<img src="assets/images/shropcheernavnli.png" width="300" height="50%">
+<img src="assets/images/shropcheernavlog.png" width="300" height="50%">
+
+The navigation bar is clean and simple. When users are not logged in it shows 'home', 'register' or 'login'. This changes when the user creates an account and is logged in, to show 'home', 'logout', and 'add a story'. The way that the navbar changes means that the navbar is less cluttered and does not have to feature actions that a user is not yet authenticated for. This responsiveness also means that logged-in users do not have options in the navbar that do not apply to them, such as register or login. 
+
+#### Intro:
+The landing page provides a short introduction to the website, encouraging new users to sign up or login to be able to post their own stories
+or comment. It also features the most recently uploaded stories so that users can quickly understand what the site is about without having to navigate too many pages.
+
+<img src="assets/images/shropintro.png">
+
+
+
+
 
 
 #### Registration:
 
-Registration allows users to view the available books and the relevant book details at The Book Booth library. It allows them to add a book as well as edit and delete their addition to ensure the book collection available is updated regularly. 
+Registration allows users to comment on stories as well as add stories themselves. When users have submitted their own stories, they can also edit or delete these stories.
 
-![signup](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0b6b2b83-d426-4e63-805b-09a6dcdde550)
+<img src="assets/images/register.png">
+
 
 
 
 #### Sign In:
 
-![sign-in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/6a1d9a16-2211-4403-88a1-3ec1b506cef4)
+<img src="assets/images/signin.png">
+
+#### Stories:
+
+Users are able to view numerous stories on each page and can quickly see who is the story author, what area of Shropshire the story is about, the news category of the story, and the date the story was posted. 
+
+<img src="assets/images/shropstories.png">
 
 
-#### Books:
+#### Story Details, Editing and Deleting stories:
 
-![books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/54c96d8e-6bc3-403f-a8ad-1c4188b60a6e)
+When users click on a particular story they want to read it will load up the full article. If the story is one that the user
+themselves have added, and they are signed into the corresponding account, they are also given the option to edit or delete their story. Summernote widget was added into the form so that html code is hidden and the story can be formatted correctly. 
+
+<img src="assets/images/shropeditdelete.png" width="500">
+<img src="assets/images/editstory.png" width="500">
+
+#### Story Details, Comments:
+
+Users who are not logged in can view comments at the bottom of the corresponding story. The ability to add a comment does not appear
+and they are instructed to sign in to leave a comment. Users who are logged in can see a form to submit their own comment. 
+
+<img src="assets/images/shropcommentnli.png" width="300">
+<img src="assets/images/shropcomment.png" width="300">
 
 
-#### Add a Book:
 
-![add a book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/8e15c1d9-193f-4032-b147-0969c3b45bab)
+#### Add a Story:
 
+
+<img src="">
 
 The form allows users to easily add a book to the library which will then be visible on the  books page for the users to browse. Users are also able to edit and delete a book they themselves have added giving them full control over their own contributions.
 
-
-#### Book Details:
-
-![book detail](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e88f0274-670b-4a76-8ef8-7c44a5f440a7)
-
-Users are able to find more information about the book they are interested in. The book details include the title, author and a brief summary of the book along with an book cover image. This provides users with sufficient information about the book.
 
 #### Footer:
 
 ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fde543e6-0ee2-4c17-b8a8-436d4e824f4d)
 
 Links in the footer redirect to respective social media pages. 
-It allows users to stay connected with the The Book Booth on social media platforms, keeping them informed about any changes that may occur over time.
+It allows users to stay connected with Shropcheer on social media platforms, keeping them informed about any new stories.
 
 
 # Future Features:
