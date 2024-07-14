@@ -340,6 +340,7 @@ Story details (logged in)
 <img src="assets/images/Lighthouse4.png">
 
 Add a story 
+
 <img src="assets/images/Lighthouse5.png">
 
 On a mobile device:
