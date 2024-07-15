@@ -51,9 +51,9 @@ class Story(models.Model):
     title = models.CharField(max_length=200, unique=True)
     slug = models.SlugField(max_length=200, unique=True)
     author = models.ForeignKey(
-    User, on_delete=models.CASCADE, related_name="stories_story"
+        User, on_delete=models.CASCADE, related_name="stories_story"
     )
-    body = models.TextField(default="this is where you add your story", null=False, blank=False)
+    body = models.TextField(default="this is where you add your story", null=False, blank=False)  # noqa
     created_on = models.DateTimeField(auto_now_add=True)
     image = CloudinaryField('image', default='placeholder')
     story_location = models.CharField(max_length=50, choices=STORY_LOCATION)
@@ -63,7 +63,6 @@ class Story(models.Model):
         self.slug = slugify(self.title)
         super().save(*args, **kwargs)
 
-
     class Meta:
         """
         Ordering stories
@@ -71,7 +70,7 @@ class Story(models.Model):
         ordering = ["-created_on"]
 
     def __str__(self):
-        return f"{self.title} | by {self.author} | {self.created_on} | location {self.story_location} | category {self.news_category}" 
+        return f"{self.title} | by {self.author} | {self.created_on} | location {self.story_location} | category {self.news_category}"  # noqa 
 
 
 class Comment(models.Model):

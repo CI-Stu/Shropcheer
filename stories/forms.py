@@ -3,7 +3,6 @@ from django import forms
 from .models import Comment, Story
 
 
-
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
@@ -12,14 +11,15 @@ class CommentForm(forms.ModelForm):
 
 class StoryForm(forms.ModelForm):
     body = forms.CharField(widget=SummernoteWidget())
+
     class Meta:
         model = Story
         fields = [
             'title',
-            'body', 
+            'body',
             'image',
-            'story_location', 
-            'news_category', 
+            'story_location',
+            'news_category',
             ]
 
         labels = {
@@ -29,4 +29,3 @@ class StoryForm(forms.ModelForm):
             'story_location': 'Location',
             'news_category': 'Category',
         }
-    

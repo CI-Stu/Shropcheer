@@ -2,6 +2,7 @@ from django.contrib import admin
 from .models import Story, Comment
 from django_summernote.admin import SummernoteModelAdmin
 
+
 @admin.register(Story)
 class StoryAdmin(SummernoteModelAdmin):
 
@@ -14,3 +15,4 @@ class StoryAdmin(SummernoteModelAdmin):
 
 # Register your models here.
 admin.site.register(Comment)
+

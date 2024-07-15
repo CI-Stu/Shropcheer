@@ -239,20 +239,35 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 
 ## Python
 
-I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files.
+I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files and they all show no errors.
 
-| File | CI URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| forms.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/run.py) | ![screenshot]![forms py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/f299346f-bb44-43a2-a8a5-868373d753e3)
- | Pass: No Errors |
-| settings.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/boutique-ado/settings.py) | ![screenshot]![settings py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/7951202c-2d55-4adb-90d6-8fef0707c82c)
- | Pass: No Errors |
-| Book views.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/blog/views.py) | ![screenshot]![views py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4f545d53-b304-4600-b9fb-d4feb93b6c93)
- | Pass: No Errors |
-| Book urls.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/checkout/urls.py) | ![screenshot]![urls py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e3f52187-1f65-4171-b1ba-e9096d1b5fc0)
- | Pass: No Errors |
-|  models.py | [PEP8 CI](https://pep8ci.herokuapp.com/https://raw.githubusercontent.com/hiboibrahim/thebookbooth1/main/profiles/models.py) | ![screenshot]![models py](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/f3438ec1-f275-44b6-847d-48a93c0466ed)
- | Pass: No Errors |
+#### Shropcheer urls
+
+<img src="assets/codevalidation/shropcheerurls.png">
+
+#### Shropcheer settings
+
+<img src="assets/codevalidation/shropcheersettings.png">
+
+#### Stories urls
+
+<img src="assets/codevalidation/storiesurls.png">
+
+#### Stories views
+
+<img src="assets/codevalidation/storiesviews.png">
+
+#### Stories admin
+
+<img src="assets/codevalidation/storiesadmin.png">
+
+#### Stories forms
+
+<img src="assets/codevalidation/storiesforms.png">
+
+### Stories models
+
+<img src="assets/codevalidation/storiesmodels.png">
 
 # Responsiveness:
 Development tools were used to test responsiveness on varying sized devices including laptop, mobile and tablet size.
