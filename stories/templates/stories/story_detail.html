@@ -39,7 +39,6 @@
                 <!-- Use the | safe filter inside the template tags -->
                 <p class="card-text">
                     {{ story.body | safe }}
-                </p>
             </div>
         </div>
     </div>
@@ -69,9 +68,9 @@
                     {{ comment.name }} -
                     {{ comment.created_on }}
                 </strong>
-                <br />
+                <br>
                 {{ comment.body }}
-                <br /><br />
+                <br>
 
                 {% endfor %}
             </div>
