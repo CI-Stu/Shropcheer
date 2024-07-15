@@ -221,21 +221,41 @@ Entity Relationship Diagrams (ERD) help the developer to make connections betwee
 # Validation
 ## HTML
 
-| Page | W3C URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| Home | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F) | ![home page validate](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/2ba0ff6e-6159-47e9-ad4c-2fe954589ca8) | Pass: button is a descendant of a tag |
-| Books | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Fbooks%2Fbooks%2F) | ![Validate Books page](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b7c018c4-a68a-43ee-97c5-778658bbf705) | Pass: No Errors |
-| Add a Book | [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Fbooks%2Fadd_book%2F) | ![validate adda book page](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/95eb01b9-22fc-43c4-93de-0ebcd1263467) | Pass: No Errors |
-| Sign In| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Flogin%2F) | ![validate sign in](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/872629ce-e50d-4870-845b-ed699f9178dc) | Pass: No Errors |
-| Register| [W3C](https://validator.w3.org/nu/?doc=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2Faccounts%2Fsignup%2F) | ![validate sign up](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c5e042af-b3d5-4718-bc50-ef319ba1a1c3) | unclosed elements main and div |
+#### Home/Index page
+
+Pass, no errors
+<img src="assets/codevalidation/html-index.png">
+
+#### Story details page
+
+Pass, no errors. One warning for H1 tag in Nav, but needed this to override Bootstrap
+<img src="assets/codevalidation/html-storydetail.png">
+
+#### Add story page
+
+All errors showing are related to third party widget Summernote which was used in the body of the form.
+Unable to adapt this code and advised by tutor support that this cannot be helped. 
+<img src="assets/codevalidation/html-addstory.png">
+
+#### Sign in page
+
+Pass, no errors
+
+<img src="assets/codevalidation/html-signin.png">
+
+#### Register page
+
+Four errors, but all within all-auth code which I am unable to change
+<img src="assets/codevalidation/html - register.png">
+
+
 
  ## CSS
 
  I have used the recommended [CSS Jigsaw Validator](https://jigsaw.w3.org/css-validator) to validate my CSS file.
+ No errors found
  
-| File | Jigsaw URL | Screenshot | Notes |
-| --- | --- | --- | --- |
-| style.css | [Jigsaw](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fthebookbooth1-559d9131718c.herokuapp.com%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=enhttps://jigsaw.w3.org/css-validator/validator) | ![validate css](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/200fc160-1092-4cd0-bba4-2ab1a721eb72) | Pass: No Errors |
+<img src="assets/codevalidation/cssvalid.png">
 
 ## Python
 
@@ -274,13 +294,16 @@ Development tools were used to test responsiveness on varying sized devices incl
 
 Full testing was performed on the following devices:
 
-Laptops:
+Laptop:
 
-* Macbook Air 2018 13.3-inch screen
-* Lenovo Thinkpad 14" screen
+* HP Pavilion 15.6""
+
+Tablet:
+
+* Ipad
 
  Mobile Devices:
-* Google Pixel 4a
+* iPhone 12 Pro
 
  * Browser Compatibility:
  

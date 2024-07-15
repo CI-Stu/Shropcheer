@@ -1,14 +1,11 @@
-body {
-    background-color: #F9FAFC;
-    font-family: Didact Gothic;
-    
-}
+
 
 /* Nav */
 
 .shropnav {
     background-color: #ffdc00;
     padding-left: 20px;
+    color: #3a0fe7;
 }
 
 .navname {
@@ -29,6 +26,12 @@ body {
 }
 
 /* Home Page */
+
+body {
+    background-color: #F9FAFC;
+    font-family: Didact Gothic;
+    
+}
 
 .opening-message h2 {
     font-family: Londrina Solid;
@@ -95,7 +98,7 @@ body {
     overflow: hidden;
     position: relative;
     display: inline-block;
-    height: 33vh;
+    height: 200px;
     width: 100%;
 }
 
