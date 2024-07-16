@@ -262,30 +262,37 @@ Four errors, but all within all-auth code which I am unable to change
 I have used the recommended [PEP8 CI Python Linter](https://pep8ci.herokuapp.com) to validate all of my Python files and they all show no errors.
 
 #### Shropcheer urls
+No errors
 
 <img src="assets/codevalidation/shropcheerurls.png">
 
 #### Shropcheer settings
+No errors
 
 <img src="assets/codevalidation/shropcheersettings.png">
 
 #### Stories urls
+No errors
 
 <img src="assets/codevalidation/storiesurls.png">
 
 #### Stories views
+No errors
 
 <img src="assets/codevalidation/storiesviews.png">
 
 #### Stories admin
+No errors
 
 <img src="assets/codevalidation/storiesadmin.png">
 
 #### Stories forms
+No errors
 
 <img src="assets/codevalidation/storiesforms.png">
 
 ### Stories models
+No errors
 
 <img src="assets/codevalidation/storiesmodels.png">
 
@@ -300,63 +307,52 @@ Laptop:
 
 Tablet:
 
-* Ipad
+* iPad Air
 
- Mobile Devices:
+ Mobile:
+
 * iPhone 12 Pro
 
- * Browser Compatibility:
+
+The site is responsive and adapts well to the varying screen sizes (as evidenced below)
+
+
+#### Mobile:
+
+<img src="assets/responsive/mobhome.png">
+<img src="assets/responsive/mobstorydetails.png">
+<img src="assets/responsive/mobaddstory.png">
+
+
+
+#### Tablet:
+
+<img src="assets/responsive/tabhome.png">
+<img src="assets/responsive/tabstorydetails.png">
+<img src="assets/responsive/tabaddstory.png">
+
+
+
+
+
+## Browser Compatibility:
  
- I have tested the site using the following browsers:
+ I have tested the site using the Google Chrome, Microsoft Edge and Mozilla Firefox. 
+ The site works well on all three browsers
 
-* Google Chrome
+### Google Chrome
 
-![chrome](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/545ba4e5-c7bc-4fd8-8660-1444dcb3be2a)
-
-
-* Microsoft Edge
-
-![microsoft edge](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/1570a9cd-6591-45db-840b-ecbe7f7aeb5b)
+<img src="assets/responsive/chrome.png">
 
 
-I can confirm that the site is responsive and looks as expected good on different screen sizes.
+### Microsoft Edge
+
+<img src="assets/responsive/edge.png">
 
 
-Mobile devices:
+### Mozilla Firefox
 
-![Screenshot_20231207-234024](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0f0b0d7d-a72f-43a4-8a57-bc1cf02a1367)
-
-![Screenshot_20231207-234033](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/4c3cc202-b8f6-4f9d-b1bd-cf57c911db65)
-
-![Screenshot_20231207-234013](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/39989e07-4e8d-4faf-8b57-e11686792b38)
-
-
-![0](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/211095bf-ffac-42ca-b1c8-2a45d8444038)
-
-![Screenshot_20231207-234117 (1)](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e52d022b-d3fb-4f6c-8fcb-092386ce566b)
-
-![Screenshot_20231208-000014](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0cd224f9-b46e-4db9-9260-999cc63fff90)
-
-
-
-
-
-Tablet Devices:
-
-
-![homepage](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/5e6eb5c7-4aba-434c-8ed8-8bfd56632f8a)
-
-![signup tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/c5f5a237-83ee-4ef3-b9b0-444f648ca225)
-
-![sign in tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9ac1d08b-d4b8-4aa5-a65b-e46040f3b60b)
-
-![books tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/a9c42d34-a49a-48ed-97ba-660c02de3543)
-
-![tabletadd](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/b516d61d-6e21-460a-b7f4-5b18abf41d00)
-
-![bookdetails tablet](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/17a0f099-ae15-4b8a-887b-254beac2dbb0)
-
-
+<img src="assets/responsive/firefox.png">
 
 
 
@@ -366,8 +362,6 @@ Tablet Devices:
 
 I've tested my deployed project using the Lighthouse Audit tool to check for any major issues.
 
-
-* On a laptop:
 
 Home
 
@@ -381,53 +375,49 @@ Add a story
 
 <img src="assets/images/Lighthouse5.png">
 
-On a mobile device:
-
-Home 
-![audit home mobile ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/348889e3-8c4e-41d4-b1c6-2c974780e23b)
-
-Books
-![auditbooks](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/fad662af-54da-45d0-b381-c0d70955e4e4)
-
-Add a book 
-![audit addbookmobile](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/634965ca-1b9d-4aa1-bd17-bda89f9fbafe)
 
 
-## Links
 
-| Link | Expected Outcome | Grade |
+## Manual Testing
+
+### Non logged-in user
+
+| Action | Expected Outcome | Grade |
 | ------- | ---------------- | ----- |
-| Logo / Brand | Navigates to the home page when clicked | Pass |
-| Home | Navigates to the home page when clicked | Pass |
-| Next Page | Navigates to next page of stories when clicked | Pass |
-| Previous Page | Navigates to previous page of stories when clicked | Pass |
-| Add a Story | Navigates to a form to add a story when clicked | Pass |
-| Edit a Story | Navigates to a edit story form when clicked | Pass |
-| Delete a Story | Navigates to a confirmation page when clicked | Pass |
-| Post a Comment | Adds a comment to a story when clicked | Pass |
-| Register | Navigates to a registration form when clicked | Pass |
-| Log in | Navigates to a screen where users can log in when clicked | Pass |
-| Logout | Navigates to a page confirming for the user to log out | Pass |
-
-## Testing 
+| View Story Headlines | Homepage displays story headlines with author, posted date, location and category | Pass |
+| Go to Next Page | Navigates to next page of stories when clicked | Pass |
+| Got to Previous Page | Navigates to previous page of stories when clicked | Pass |
+| View Story Details | Clicking headline navigates to the story details page | Pass |
+| Edit / Delete Story | Cannot see any option to edit or delete story | Pass |
+| Comments | Can view previous story comments / asked to start conversation if no comments | Pass |
+| Comment | No comment form shown, asked to login to leave a comment | Pass |
+| Add a Story | Cannot see navbar option to add a story | Pass |
+| Register | Link on navbar works, loads registration page and allows user to sign up | Pass |
+| Log in | Link on navbar works, loads login page and allows returning user to login | Pass |
+| Return to home | Home link on navbar and Shropcheer logo both return user to homepage when clicked  | Pass |
 
 
-| Feature | Expected Outcome | Grade | Screenshots |
-| ------- | ---------------- | ----- | --------- |
-| Modal | A message will appear informing the user of a successful action | Pass | ![modal sign out ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/9e8658e8-f751-4cdf-be3d-ca19ad6c47b2)
-| User logged in | Text displays the user logged in with their username | Pass | ![modal sign in name](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/cc4a71db-9962-49c1-b4b6-563000687ad7)
-| View books | Users can see available books which have been added | Pass | ![testing books](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/01cc3a5b-db46-4742-a8e1-cf715d78c89b)
-| Add a book | Add a book to the book collection that will be available to borrow | Pass | ![addbook](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/82133f44-d43a-4f40-863a-f4e8970057aa)
-| Admin has access to crud functionality of all additions | Admin can edit or delete any book addition | Pass | ![admin testing](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/72df0b87-6d4f-4659-9d4f-5e986f88e16c)
-| Edit a book | A user can edit the details on the book that they have addded. It will update their addition on the books page | Pass | ![edit book ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/79f6de7e-fd14-4c34-a474-483b7cd5285f)
-| Delete a book | A user who added a book OR an admin can delete a book. It will then be deleted from the DB | Pass | ![delete book](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/88275723-e875-404a-b96f-58bac0a4907a)
-| Registration | New users can access a registration form from the "Register" link | Pass | ![testing sign up](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/e9e6c4e1-c90a-4854-a11c-014a8fc80043)
-| Log in | Users can log in using a form after clicking "Log in" | Pass | ![sign in testing ](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/3fafee34-e6d6-4162-8989-faa78e1bf355)
-| Log out | Users get logged out after clicking "Log out" | Pass | ![testing sign out](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/d7d377aa-fc2d-4025-a73e-22d2d81c622a)
-| Grid display | A CSS grid will display the books in a clear, responsive format | Pass | N/A
-| Functional buttons | Edit, delete, create buttons will be functional throughout the site | Pass | ![edit delete buttons](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/67cfb78d-7d5b-4072-8aa8-812b9c444b67)
-| Footer | A footer displays social information | Pass | ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0879fada-18a4-4363-8257-0af0061cf79f)
-| Social links work | The social links will navigate to a new page when they're clicked. They will open in a new tab | Pass | ![footer](https://github.com/hiboibrahim/thebookbooth1/assets/144109298/0879fada-18a4-4363-8257-0af0061cf79f)
+### Logged-in user
+
+| Action | Expected Outcome | Grade |
+| ------- | ---------------- | ----- |
+| Post Login Confirmation | Login success message appears once logged in | Pass |
+| Delete Another Users Story | Cannot see option to edit or delete story if story was created by another user | Pass |
+| Edit / Delete Own Story Button Load | Can see option to edit or delete story if story was created by that user | Pass |
+| Load Edit Story | When edit button is clicked form loads with all story detail entered | Pass |
+| Edit Story | When completed, confirmation message appears and story is successfully changed | Pass |
+| Confirm Delete Request | When delete button is clicked a confirmation page loads to check if user wants to delete their story | Pass |
+| Delete Story | When completed, confirmation message appears and story no longer appears | Pass |
+| Comment | Comment form displays and posts comment when one is entered | Pass |
+| Comment Confirmation | Confirmation message for comment posting successfully | Pass |
+| Comment Count | Displayed comment number count increases by one when a comment is posted | Pass |
+| Load Add Story | Navbar shows option to add story and add story form loads when clicked | Pass |
+| Add Story | When form is completed new story is visible | Pass |
+| Add Story Confirmation | When new story has been added a confirmation message appears | Pass |
+| Logout | Link on navbar works, loads logout page and allows user to logout | Pass |
+| Logout Confirmation | When user has logged out a confirmation message appears | Pass |
+
+
 
 
 # Tools and Technologies Used:
@@ -456,7 +446,8 @@ The technologies implemented in this application included HTML5, CSS, Bootstrap,
 
 # Deployment :
 
-I used the steps used when deploying our django blog to deploy this application. The instructions for this mainly came from the follow along videos and text-steps provided on the code institute LMS.
+I used the steps from deploying the django blog within the 'Developing with Django' section of the LMS to deploy this application. This was also cross referenced with the step in the 'Django Deployment Instructions 2024' pdf document which was supplied to us by our facilitator. 
+<img src="assets/images/Deployment.png">
 
 # Bugs
 
