@@ -22,17 +22,17 @@ https://shropcheer-2a6907e40b3b.herokuapp.com/
 
 # User Stories:
 
-## Admin:
+### Admin:
 
 * As an admin I want to be able to be able to create, edit and delete stories so that I can maintain the website
 
-## Site User (not logged in):
+### Site User (not logged in):
 
 * As a site user I want to be able to browse through news stories so that I can enjoy reading content and find out if the site is for me.
 * As a site user I want to know which area the article is focussed on so that I can tell if the article applies to my community. 
 * As a non logged-in user I want to be able to create an account so that I can post my own content. 
 
-## Site User (logged in):
+### Site User (logged in):
 
 * As a logged-in user I want to be able to post my own positive news stories so that I can share more positive stories with the local community. 
 * As a logged-in user I want to be able to add images to my stories so they are more visually stimulating for the readers.
