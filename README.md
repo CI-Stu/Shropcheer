@@ -41,7 +41,6 @@ https://shropcheer-2a6907e40b3b.herokuapp.com/
 * As a logged in user I want to be able to comment on a story so that I can interact with the author or other readers. 
 
 
-
 ## Wireframe & Initial Design:
 ### Home Page
 <img src="assets/wireframes/shropcheerhomeNLI.png">
@@ -448,6 +447,49 @@ The technologies implemented in this application included HTML5, CSS, Bootstrap,
 
 I used the steps from deploying the django blog within the 'Developing with Django' section of the LMS to deploy this application. This was also cross referenced with the step in the 'Django Deployment Instructions 2024' pdf document which was supplied to us by our facilitator. 
 <img src="assets/images/Deployment.png">
+
+The live, deployed site was deployed on [Heroku](https://shropcheer-2a6907e40b3b.herokuapp.com).
+
+### Database
+
+The project uses the [Code Institute Postgres Database](https://dbs.ci-dbs.net/) server. This database was linked within the env.py file. 
+
+I used this database to store data submitted by users such as login details, comments, and stories. 
+
+### Deploying with Heroku
+
+Here is the process I followed to deploy the application on Heroku:
+
+1. Created a new application.
+2. Assigned a unique name to the app.
+3. Selected the appropriate region.
+4. Clicked "Create App."
+
+### In the local environment:
+
+1. Installed `gunicorn` to serve the application.
+2. Generated the `requirements.txt` file using the command:  
+   `pip3 freeze --local > requirements.txt`
+3. Created a `Procfile` to configure the app's process.
+4. Added the following line to the `Procfile` for Heroku deployment:  
+   `web: gunicorn shropcheer.wsgi`
+
+### Returning to Heroku:
+
+1. Navigated to the "Settings" tab.
+2. Clicked "Reveal Config Vars."
+3. Set the necessary environment variables, including:
+   - `CLOUDINARY_URL`
+   - `DATABASE_URL`
+   - `SECRET_KEY`
+
+These variables were also saved locally in `env.py`, which was excluded from version control by adding it to `.gitignore`.
+
+4. Connected the application to GitHub for deployment:
+   - Opened the "Deploy" tab and selected "GitHub" as the deployment method.
+   - Linked the application to the corresponding GitHub repository.
+   - Ensured the "main" branch was selected for deployment.
+   - Clicked "Deploy Branch" and verified successful deployment of the application.
 
 # Bugs
 
